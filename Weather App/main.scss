@@ -1,0 +1,74 @@
+$Pfont: 'Comfortaa', cursive;
+$Sfont: 'Roboto', sans-serif;
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: $Pfont;
+    font-size: 2rem;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    // border: 5px solid white;
+}
+
+.container{
+    height: 100vh;
+    width: 100%;
+    // background-image: url("Images/night.jpg";
+    // background: linear-gradient(rgb(56, 164, 179),rgb(0, 185, 176),rgb(7, 27, 141));
+    color: white;
+    display:grid;
+    // text-align: center;
+    grid-template-rows: repeat(4,1fr);
+    font-size: 1.5rem;
+    // justify-content: center;
+    align-items: center;
+    justify-items: center;
+    grid-template-areas: 
+        "icon"
+        "place"
+        "temp"
+        "summary"
+
+}
+
+.timezone{
+    grid-area: place;
+    font-size: 2rem;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.temp #degrees{
+    font-size: 3rem;
+    grid-area: temp;
+}
+
+.temp #current{
+    font-size: 2rem;
+    grid-area: temp;
+    text-align: center;
+}
+
+#degrees{
+    cursor: pointer;
+    margin-bottom: 2rem;
+}
+
+.forecast{
+    grid-area: summary;
+    padding: 1rem;
+    margin-bottom: 10vh;
+    width: 80vw;
+    text-align: center;
+}
+
+
+
+
