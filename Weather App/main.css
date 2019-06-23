@@ -38,6 +38,10 @@ body {
   text-transform: uppercase;
 }
 
+.temp {
+  text-align: center;
+}
+
 .temp #degrees {
   font-size: 3rem;
   -ms-grid-row: 3;
