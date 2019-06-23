@@ -32,7 +32,7 @@ window.addEventListener('load', () => {
                     //Set Icons
                     const ICON = data.currently.icon;
                     setIcons(ICON, document.querySelector(".icon"));
-                    console.log(data);
+                    // console.log(data); 
 
 
                     degrees.addEventListener('click',() =>{
